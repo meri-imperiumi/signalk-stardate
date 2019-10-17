@@ -9,25 +9,30 @@ module.exports = (app) => {
   plugin.description = 'Provides SignalK the current stardate';
 
   plugin.start = () => {
+    plugin.stardate();
     timer = setInterval(() => {
-      app.handleMessage(plugin.id, {
-        updates: [
-          {
-            values: [
-              {
-                path: 'navigation.stardate',
-                value: stardate(new Date()),
-                meta: {
-                  displayName: 'Stardate',
-                  units: 'stardate',
-                },
-              },
-            ],
-          },
-        ],
-      });
+      plugin.stardate();
     }, 60000);
     app.debug('stardate started');
+  };
+
+  plugin.stardate = () => {
+    app.handleMessage(plugin.id, {
+      updates: [
+        {
+          values: [
+            {
+              path: 'navigation.stardate',
+              value: stardate(new Date()),
+              meta: {
+                displayName: 'Stardate',
+                units: 'stardate',
+              },
+            },
+          ],
+        },
+      ],
+    });
   };
 
   plugin.stop = () => {
