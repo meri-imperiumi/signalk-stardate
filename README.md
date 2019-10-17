@@ -1,2 +1,2 @@
 # signalk-stardate
-Provides current stardate to signalK
+Provides current [stardate](https://en.wikipedia.org/wiki/Stardate) to signalK
