@@ -1,0 +1,25 @@
+{
+  "name": "@meri-imperiumi/signalk-stardate",
+  "version": "0.1.0",
+  "description": "Provides current stardate to signalK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/meri-imperiumi/signalk-stardate.git"
+  },
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "author": "cannonerd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meri-imperiumi/signalk-stardate/issues"
+  },
+  "homepage": "https://github.com/meri-imperiumi/signalk-stardate#readme",
+  "dependencies": {
+    "stardate-converter": "^2.0.0"
+  }
+}
