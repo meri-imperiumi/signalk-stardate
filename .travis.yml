@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- lts/*
+deploy:
+  provider: npm
+  email: henri.bergius@iki.fi
+  api_key:
+    secure: Y0y6OiPEYXbrjIoafbpGbD8g+3I3X5kJ5Y2PMYINNfz1hypX15RyMvSeD6ZUWXo/juzx6i1x/VgfKHrb1yvPlq1qiWfoWTr+L3mYM/o9iecPfsRPLhaKvag3XWwiSUpNfY2Gaau+c0gTW6iQ5bSV/8WzQul4i3J/0FCaxVy7U1UpdYCQdG7eYKa6eTTA/vkUwL4Rt5lvnp5cB9HXu8jD5EZ4u1Lf+bkD45QM7/xvmA8nupjtZTH1/etTI05uJHLIVnugw0r/5i1g6giQeEvlk7HPRuu2cuCD+t4HEIbdASo7BwHDdcWU7NhtSLq676nP1XJRefiwOkw2lt2jw18+JQIEvMCaTk+GspwUT8ijklFneZaJKvToyIVqnqvC1mv1TUE1upJU4ibZJcHmUwWTPM0QshU7V7qhe2GEimgcUWrfUS5OTQPIuLX3sXYl4ouKgRbxeJoUI1tBAskSQLwBhLFUW/mIli+JUusPUAlICNa8yFiLs+Et7BUTnuFkVLn5rSCgUoneSdAiiQO87PrFXLn7sw1O0T05lp1r9XkiHU+YizUWTbb0NC3AkIX2Yigp4V0veZo9G+lsANJ30ZGCN/TWD8X0Q1qHIwtTRX5cvZCkwBePVPXezI2iHBg5bf+/gyAVc7BRfqz8ZiY3yhq3wN/Y/tlLwOE2rHhP3CPz9/A=
+  on:
+    tags: true
+    repo: meri-imperiumi/signalk-stardate
