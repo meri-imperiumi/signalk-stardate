@@ -1,6 +1,6 @@
 {
   "name": "@meri-imperiumi/signalk-stardate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides current stardate to signalK",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "url": "git://github.com/meri-imperiumi/signalk-stardate.git"
   },
   "keywords": [
-    "signalk-node-server-plugin"
+    "signalk-node-server-plugin",
+    "signalk-category-utility"
   ],
   "author": "cannonerd",
   "license": "MIT",
